@@ -53,10 +53,6 @@ body{
     }
 }
 
-/* nav{
-    display: flex;
-} */
-
 .menu-lateral{
     position: fixed;
     top: 0;
@@ -92,32 +88,38 @@ body{
 
 .home__titulo{
     padding: 20px 0px 20px;
-    margin-left: 80px;
+    margin-left: 90px;
     font-weight: bold;
     font-size: 25px;
 }
 
 .home__capas ul{
     display: flex;
-    margin-left: 30px;
+    margin-left: 80px;
+    gap: 40px;
 }
 
 .home__capas li{
     display: inline-block;
-    width: 200px; 
+    padding: 10px;
     text-align: center;
+    /* background-color: yellow; */
 }
 
-.home__capas img,
-.home__capas li,
 .home__capas a{
+    width: 100%;
+    color: #fff;;
+    background-color: #D2691E;
+    border-radius: 4px;
+    padding: 5px;
     display: block;
     text-decoration: none;
+    margin-bottom: 10px;
+    border: 1px solid black;
 }
 
 .home__capas img{
     width: 100px;
-    margin: 0 auto;
 }
 
 .home__capas li img{
@@ -125,5 +127,29 @@ body{
 }
 
 .rodape{
+    display: flex;
     box-shadow: 0px -1px 4px black;
+}
+
+.rodape__contatos{
+    margin-left: 200px;
+}
+
+.rodape__contatos p,
+.rodape__links p{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rodape__contatos,
+.rodape__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__contatos a,
+.rodape__links a{
+    text-decoration: none;
+    color: #4682B4;
 }
