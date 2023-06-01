@@ -62,6 +62,7 @@ body{
 }
 
 .menu-lateral__icone{
+    background-color: #272727;
     text-decoration: none;
     list-style: none;
     margin-bottom: 10px;
@@ -119,29 +120,32 @@ body{
 }
 
 .rodape{
-    display: flex;
     box-shadow: 0px -1px 4px black;
 }
 
 .rodape__contatos{
-    margin-left: 200px;
+    flex-grow: 1;
+    margin-left: 40px;
 }
 
-.rodape__contatos p,
-.rodape__links p{
+.rodape__contatos p{
     font-weight: bold;
-    margin-bottom: 10px;
+    padding: 10px;
 }
 
-.rodape__contatos,
-.rodape__links{
+.rodape__contatos a{
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.rodape__contatos a,
-.rodape__links a{
     text-decoration: none;
     color: #4682B4;
+}
+
+.rodape__contatos img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.rodape__logo{
+    position: absolute;
+    right: 0;
 }
