@@ -47,12 +47,6 @@ body{
     
 }
 
-@media screen and (max-width: 800px){
-    .cabecalho__busca{
-        display: none;
-    }
-}
-
 .menu-lateral{
     position: fixed;
     top: 0;
