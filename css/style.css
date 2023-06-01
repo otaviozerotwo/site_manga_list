@@ -61,29 +61,27 @@ body{
     box-shadow: 1px 1px 4px black;
 }
 
-/* .menu-lateral a{
-    text-decoration: none;
-    color: #fff;
-} */
-
-/* .menu-lateral li{
-    list-style: none;
-    padding: 0px 0px 16px;
-} */
-
 .menu-lateral__ativo{
     background-color: red;
     padding: 10px;
     border-radius: 10px;
 }
 
-.menu-lateral__btn{
+.menu-lateral__icone{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu-lateral__icone img{
+    width: 40px;
     background-color: transparent;
     border: none;
     color: #fff;
     cursor: pointer;
     display: flex;
     padding: 10px;
+
 }
 
 .home__titulo{
