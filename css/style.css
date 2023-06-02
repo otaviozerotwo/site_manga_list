@@ -55,11 +55,11 @@ body{
     box-shadow: 1px 1px 4px black;
 }
 
-.menu-lateral__ativo{
+/* .menu-lateral__ativo{
     background-color: red;
     padding: 10px;
     border-radius: 10px;
-}
+} */
 
 .menu-lateral__icone{
     background-color: #272727;
