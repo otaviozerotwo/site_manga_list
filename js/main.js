@@ -85,6 +85,13 @@ function hover_manga(){
   $('#info_adicionais_5').hide();
   $('#info_adicionais_6').hide();
   $('#info_adicionais_7').hide();
+  $('#info_adicionais_8').hide();
+  $('#info_adicionais_9').hide();
+  $('#info_adicionais_10').hide();
+  $('#info_adicionais_11').hide();
+  $('#info_adicionais_12').hide();
+  $('#info_adicionais_13').hide();
+  $('#info_adicionais_14').hide();
 
   $('#img_capa_1').hover(function(){
     $('#info_adicionais_1').show();
@@ -126,6 +133,48 @@ function hover_manga(){
     $('#info_adicionais_7').show();
   }, function(){
     $('#info_adicionais_7').hide();
+  });
+
+  $('#img_capa_8').hover(function(){
+    $('#info_adicionais_8').show();
+  }, function(){
+    $('#info_adicionais_8').hide();
+  });
+
+  $('#img_capa_9').hover(function(){
+    $('#info_adicionais_9').show();
+  }, function(){
+    $('#info_adicionais_9').hide();
+  });
+
+  $('#img_capa_10').hover(function(){
+    $('#info_adicionais_10').show();
+  }, function(){
+    $('#info_adicionais_10').hide();
+  });
+
+  $('#img_capa_11').hover(function(){
+    $('#info_adicionais_11').show();
+  }, function(){
+    $('#info_adicionais_11').hide();
+  });
+
+  $('#img_capa_12').hover(function(){
+    $('#info_adicionais_12').show();
+  }, function(){
+    $('#info_adicionais_12').hide();
+  });
+
+  $('#img_capa_13').hover(function(){
+    $('#info_adicionais_13').show();
+  }, function(){
+    $('#info_adicionais_13').hide();
+  });
+
+  $('#img_capa_14').hover(function(){
+    $('#info_adicionais_14').show();
+  }, function(){
+    $('#info_adicionais_14').hide();
   });
 }
 
