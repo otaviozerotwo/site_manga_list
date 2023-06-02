@@ -77,7 +77,60 @@ function mostrar_descricao_menu(){
   });
 }
 
+function hover_manga(){
+  $('#info_adicionais_1').hide();
+  $('#info_adicionais_2').hide();
+  $('#info_adicionais_3').hide();
+  $('#info_adicionais_4').hide();
+  $('#info_adicionais_5').hide();
+  $('#info_adicionais_6').hide();
+  $('#info_adicionais_7').hide();
+
+  $('#img_capa_1').hover(function(){
+    $('#info_adicionais_1').show();
+  }, function(){
+    $('#info_adicionais_1').hide();
+  });
+
+  $('#img_capa_2').hover(function(){
+    $('#info_adicionais_2').show();
+  }, function(){
+    $('#info_adicionais_2').hide();
+  });
+
+  $('#img_capa_3').hover(function(){
+    $('#info_adicionais_3').show();
+  }, function(){
+    $('#info_adicionais_3').hide();
+  });
+
+  $('#img_capa_4').hover(function(){
+    $('#info_adicionais_4').show();
+  }, function(){
+    $('#info_adicionais_4').hide();
+  });
+
+  $('#img_capa_5').hover(function(){
+    $('#info_adicionais_5').show();
+  }, function(){
+    $('#info_adicionais_5').hide();
+  });
+
+  $('#img_capa_6').hover(function(){
+    $('#info_adicionais_6').show();
+  }, function(){
+    $('#info_adicionais_6').hide();
+  });
+
+  $('#img_capa_7').hover(function(){
+    $('#info_adicionais_7').show();
+  }, function(){
+    $('#info_adicionais_7').hide();
+  });
+}
+
 $(document).ready(function(){
   mostrar_descricao_menu();
   ajustar_resolucao();
+  hover_manga();
 });
