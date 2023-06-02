@@ -15,13 +15,13 @@ body{
     background-color: #1C1C1C;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     padding: 0 5%;
+    gap: 20px;
 }
 
 .cabecalho{
     box-shadow: 1px 1px 4px black;
-    height: 60px;
+    padding: 1% 1% 1% 5%;
 }
 
 .cabecalho__logo img,
@@ -33,11 +33,11 @@ body{
     display: flex;
     width: 270px;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .cabecalho__busca input{
-    padding: 20px;
+    padding: 5%;
     border: none;
     border-radius: 10px;
     background-color: #1C1C1C;
@@ -51,7 +51,9 @@ body{
     border-radius: 5px;
     color: #fff;
     font-size: 12px;
-    
+    position: absolute;
+    right: 2%;
+    top: 2%;
 }
 
 .menu-lateral{
