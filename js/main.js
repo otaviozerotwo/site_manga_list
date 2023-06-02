@@ -45,26 +45,34 @@ function mostrar_descricao_menu(){
   $('#descricao_menu_reviews').hide();
 
   $('#link_home').hover(function(){
+    $('#icone_home').hide();
     $('#descricao_menu_home').show();
   }, function(){
+    $('#icone_home').show();
     $('#descricao_menu_home').hide();
   });
 
   $('#link_catalogo').hover(function(){
+    $('#icone_catalogo').hide();
     $('#descricao_menu_catalogo').show();
   }, function(){
+    $('#icone_catalogo').show();
     $('#descricao_menu_catalogo').hide();
   });
 
   $('#link_checklist').hover(function(){
+    $('#icone_checklist').hide();
     $('#descricao_menu_checklist').show();
   }, function(){
+    $('#icone_checklist').show();
     $('#descricao_menu_checklist').hide();
   });
 
   $('#link_reviews').hover(function(){
+    $('#icone_reviews').hide();
     $('#descricao_menu_reviews').show();
   }, function(){
+    $('#icone_reviews').show();
     $('#descricao_menu_reviews').hide();
   });
 }
