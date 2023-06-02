@@ -63,7 +63,6 @@ body{
 
 .menu-lateral__icone{
     background-color: #272727;
-    text-decoration: none;
     list-style: none;
     margin-bottom: 10px;
 }
@@ -77,6 +76,19 @@ body{
     display: flex;
     padding: 10px;
 
+}
+
+.menu-lateral__icone a{
+    text-decoration: none;
+}
+
+.menu-lateral__icone p{
+    background-color: #4682B4;
+    color: #fff;
+    padding: 20px;
+    height: 20px;
+    width: 60px;
+    text-align: center;
 }
 
 .home__titulo{
