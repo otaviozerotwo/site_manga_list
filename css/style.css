@@ -21,6 +21,7 @@ body{
 
 .cabecalho{
     box-shadow: 1px 1px 4px black;
+    height: 60px;
 }
 
 .cabecalho__logo img,
@@ -43,12 +44,13 @@ body{
     color: #fff;
 }
 
-.cabecalho__botoes a{
+.cabecalho__login a{
     padding: 20px;
     background-color: #4682B4; 
     text-decoration: none;
     border-radius: 5px;
     color: #fff;
+    font-size: 12px;
     
 }
 
