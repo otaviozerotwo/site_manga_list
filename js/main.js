@@ -1,46 +1,24 @@
 function ajustar_resolucao(){
+  var breakpoints = [
+    { width: 800, class: '.cabecalho__busca' },
+    { width: 1400, class: '.capa_8' },
+    { width: 1250, class: '.capa_7' },
+    { width: 1050, class: '.capa_6' },
+    { width: 900, class: '.capa_5' },
+    { width: 750, class: '.capa_4' },
+    { width: 550, class: '.capa_3' }
+  ];
+
   $(window).on('resize', function(){
-    if($(window).width() <= 800){
-      $('.cabecalho__busca').hide();
-    }else{
-      $('.cabecalho__busca').show();
-    }
+    var windowWidth = $(window).width();
 
-    if($(window).width() <= 1400){
-      $('.capa_8').hide();
-    }else{
-      $('.capa_8').show();
-    }
-
-    if($(window).width() <= 1250){
-      $('.capa_7').hide();
-    }else{
-      $('.capa_7').show();
-    }
-
-    if($(window).width() <= 1050){
-      $('.capa_6').hide();
-    }else{
-      $('.capa_6').show();
-    }
-
-    if($(window).width() <= 900){
-      $('.capa_5').hide();
-    }else{
-      $('.capa_5').show();
-    }
-
-    if($(window).width() <= 750){
-      $('.capa_4').hide();
-    }else{
-      $('.capa_4').show();
-    }
-
-    if($(window).width() <= 550){
-      $('.capa_3').hide();
-    }else{
-      $('.capa_3').show();
-    }
+    breakpoints.forEach(function(breakpoint){
+      if (windowWidth <= breakpoint.width){
+        $(breakpoint.class).hide();
+      } else {
+        $(breakpoint.class).show();
+      }
+    });
   });
 }
 
@@ -136,9 +114,8 @@ function adicionar_capas(){
     nome_div.append(nova_tag_ul);
 }
 
-
 $(document).ready(function(){
-  $(this).find(".descricao_menu").hide();
+  // $(this).find(".descricao_menu").hide();
   mostrar_descricao_menu();
   adicionar_capas();
   ajustar_resolucao();
