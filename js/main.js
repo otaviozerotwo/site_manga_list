@@ -91,13 +91,11 @@ function hover_manga(){
 }
 
 function adicionar_capas(){
-    var nome_div = $('.home__capas'); // Seletor para a div com a classe home__capas
+    var nome_div = $('.home__capas');
     
-    // Verifica se a div já possui a tag <ul>
-    var nova_tag_ul = $('<ul>'); // Cria a tag <ul>
+    var nova_tag_ul = $('<ul>');
       
     for(var i = 1; i <= 8; i++){
-    // Cria a tag <li> com o conteúdo desejado
       var nova_tag_li = $('<li>').addClass('capa_' + i)
                                   .append($('<img>').attr('src', 'img/dragon_ball_' + i + '.png')
                                                     .attr('id', 'img_capa_' + i)
@@ -107,15 +105,13 @@ function adicionar_capas(){
                                   .append($('<a>').attr('href', '#').text('+ COLEÇÃO'))
                                   .append($('<p>').text('Dragon Ball #' + i));
 
-      // Adiciona a nova tag <li> à tag <ul>
       nova_tag_ul.append(nova_tag_li);
     }
-    // Adiciona a tag <ul> à div com a classe home__capas
+  
     nome_div.append(nova_tag_ul);
 }
 
 $(document).ready(function(){
-  // $(this).find(".descricao_menu").hide();
   mostrar_descricao_menu();
   adicionar_capas();
   ajustar_resolucao();
