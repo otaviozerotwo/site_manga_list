@@ -11,26 +11,26 @@
             <ul>
                 <li class="menu-lateral__icone">
                     <a href="index.html" id="link_home">
+                        <p id="descricao_menu_home">HOME</p>
                         <img src="img/icon_home.png" id="icone_home" alt="Imagem de uma casinha">
-                        <p class="descricao_menu">HOME</p>
                     </a>
                 </li>
                 <li class="menu-lateral__icone">
                     <a href="catalogo.html" id="link_catalogo">
+                        <p id="descricao_menu_catalogo">CATÁLOGO</p>
                         <img src="img/icon_catalogo.png" id="icone_catalogo" alt="Imagem de um livro">
-                        <p class="descricao_menu">CATÁLOGO</p>
                     </a>
                 </li>
                 <li class="menu-lateral__icone">
                     <a href="checklist.html" id="link_checklist">
+                        <p id="descricao_menu_checklist">CHECKLIST</p>
                         <img src="img/icon_checklist.png" id="icone_checklist" alt="Imagem de uma lista">
-                        <p class="descricao_menu">CHECKLIST</p>
                     </a>
                 </li>
                 <li class="menu-lateral__icone">
                     <a href="reviews.html" id="link_reviews">
+                        <p id="descricao_menu_reviews">REVIEWS</p>
                         <img src="img/icon_reviews.png" id="icone_reviews" alt="Imagem de um balão de fala">
-                        <p class="descricao_menu">REVIEWS</p>
                     </a>
                 </li>
             </ul>
@@ -49,28 +49,39 @@
             </div>
 
             <div class="cabecalho__login">
-                <a href="entrar.html">ENTRAR | CADASTRAR</a>
+                <a href="#">ENTRAR | CADASTRAR</a>
             </div>
         </header>
-        <main class="home">
-            
+        <main class="cadastro">
+            <div class="cadastro__titulo__h4" >
+                <h4>Entrar | Cadastrar</h4>
+            </div>
 
-            <section class="home__ultimos-titulos">
-                <div class="home__titulo">
-                    <p>ÚLTIMOS TÍTULOS ADICIONADOS</p>
+            <div class="cadastro__titulo__h6" >
+                <h6>Faça login ou crie uma conta</h6>
+            </div>
+
+            <form class="form__login">
+                <hr class="form__login__linha">
+                
+                <div class="form__login__email" >
+                    <label>EMAIL</label>
+                    <input type="email">
+            
+                    <label>SENHA</label>
+                    <input type="password">
                 </div>
 
-                <div class="home__capas"></div>
-
-            </section>
-            
-            <section class="home__checklist">
-                <div class="home__titulo">
-                    <p>CHECKLIST</p>
+                <div class="form__login__btn-entrar" >
+                    <button>ENTRAR</button>
                 </div>
+                
+                <hr class="form__login__linha">
 
-                <div class="home__capas"></div>
-            </section>
+                <div class="form__login__btn-cadastro" >
+                    <a href="cadastrar.html" >FAÇA SEU CADASTRO</a>
+                </div>
+            </form>
             
         </main> 
         <footer class="rodape">

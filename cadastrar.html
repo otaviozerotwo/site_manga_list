@@ -49,7 +49,7 @@
             </div>
 
             <div class="cabecalho__login">
-                <a href="cadastro.html">ENTRAR | CADASTRAR</a>
+                <a href="#">ENTRAR | CADASTRAR</a>
             </div>
         </header>
         <main class="cadastro">
@@ -61,14 +61,22 @@
                 <h6>Faça login ou crie uma conta</h6>
             </div>
 
-            <form class="form__login">
-                <hr>
-                <div class="form__login__email" >
+            <form class="form__cadastro">
+                <hr class="form__cadastro__linha">
+                
+                <div class="form__cadastro__campos" >
+                    <label>NOME</label>
+                    <input type="text">
+                    
+                    <label>SOBRENOME</label>
+                    <input type="text">
+                    
+                    <label>NICKNAME</label>
+                    <input type="text">
+
                     <label>EMAIL</label>
                     <input type="email">
-                </div>
-
-                <div class="form__login__senha" >
+            
                     <label>SENHA</label>
                     <input type="password">
                 </div>
@@ -77,10 +85,11 @@
                     <button>ENTRAR</button>
                 </div>
                 
-                <hr>
+                <hr class="form__cadastro__linha">
 
-                <div class="form__login__btn-cadastro" >
-                    <button>FAÇA SEU CADASTRO</button>
+                <div class="form__cadastro__btn-cadastrar" >
+                    <a href="entrar.html">VOLTAR</a>
+                    <button>CADASTRAR</button>
                 </div>
             </form>
             

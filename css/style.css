@@ -192,37 +192,39 @@ body{
     color: #C0C0C0;
 }
 
-.form__login hr{
-    margin-bottom: 20px;
+.form__login__linha{
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .form__login label{
     color: #C0C0C0;
     margin-bottom: 10px;
-    /* text-align: left; */
 }
 
-.form__login button{
+.form__login button,
+.form__login a{
     color: #272727;
     padding: 15px 30px 15px 30px;
     margin-bottom: 20px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
 
 .form__login__btn-entrar button{
     background-color: #4682B4;
-    /* margin-left: auto; */
+    margin-left: 350px;
 }
 
 .form__login__email,
 .form__login__senha{
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
+    margin-left: 55px;
 }
 
-.form__login input{
+.form__login__email input{
     justify-content: center;
     width: 400px;
     padding: 5px;
@@ -235,6 +237,9 @@ body{
     justify-content: center;
 }
 
-.form__login__btn-cadastro button{
+.form__login__btn-cadastro a{
     background-color: green;
+    margin-left: 150px;
+    text-decoration: none;
+    font-size: 12px;
 }
